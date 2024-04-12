@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Components</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+
+<header class="main-header">
+
+   <nav class="main-nav">
+
+    <a href="#">
+      <img src="imagens/perfil.png" alt="Foto de perfil" class="perfil-img">
+    </a>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tipografia.html">Typography</a></li>
+        <li><a href="cards.html">Cards</a></li>
+        <li><a href="listas.html">Lists</a></li>
+        <li><a href="formulario.html">Form</a></li>
+        <li><a href="botoes.html">Buttons</a></li>
+        <li><a href="tabelas.html">Table</a></li>
+    </ul>
+
+   </nav>
+
+</header>
+
+<main class="main">
+
+  <h1>My component</h1>
+
+  <section>
+    <h2>Contact</h2>
+
+    <div class="row">
+
+      <form action="">
+        <div class="row">
+
+          <div>
+            <label for="nome">Name</label>
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" required>
+          </div>
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" placeholder="Digite um E-mail valido" autocomplete="off" required>
+          </div>
+        </div>
+
+          <label for="mensagem">Type your message</label>
+          <textarea name="mensagem" id="mensagem" rows="6"></textarea required>
+
+          <input type="submit" value="Enviar" class="btn">
+
+      </form>
+
+      <address class="form-address">
+        <p> <b> Address </b> 1234 Somewhere Rd. Nashville, TN 00000 United States </p>
+        <p> <b> Phone</b> 000-000-000 </p>
+        <p> <b> Email</b> email@test.com </p>
+      </address>
+
+    </div>
+  </section>
+  
+  <section>
+    <h2>Quiz</h2>
+
+    <form action="" class="form-quiz">
+      <label for="tecnologia">what's your preferred language ?</label>
+      <select name="tecnologia" id="tecnologia">
+        <option value="null">Select</option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">Javascript</option>
+        <option value="php">PHP</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+      </select>
+
+      <label> Low priority <input type="radio" name="prioridade" value="baixa"> </label>
+
+      <label> Medium priority <input type="radio" name="prioridade" value="media"> </label>
+
+      <label> High priority <input type="radio" name="prioridade" value="alta"> </label>
+
+      <label> <input type="checkbox" name="copy" value="true"> Send me a copy </label>
+
+      <label> <input type="checkbox" name="humano" value="true"> I'm a Human </label>
+
+      <div class="row">
+        <input type="reset" value="Limpar" class="btn-reset">
+        <input type="submit" value="Enviar" class="btn btn-stroke">
+      </div>
+    </form>    
+  </section>
+ 
+</main>
+  
+</body>
+</html>
